@@ -1,0 +1,113 @@
+$primary-color: #8b5cf6;
+$secondary-color: #c084fc;
+$background-color: #111827;
+$card-color: #1f2937;
+$text-color: #f9fafb;
+$muted-color: #9ca3af;
+$border-color: $primary-color;
+$button-color: $primary-color;
+$hover-color: $secondary-color;
+
+$spacing-small: 10px;
+$spacing-medium: 16px;
+$spacing-large: 24px;
+
+$card-radius: 18px;
+$button-radius: 10px;
+
+$card-width: 360px;
+$image-height: 220px;
+
+.item-card {
+  width: $card-width;
+  background: $card-color;
+  color: $text-color;
+  border: 2px solid $border-color;
+  border-radius: $card-radius;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  padding-bottom: $spacing-small + 4px;
+  transition: 0.3s ease;
+
+  &__image {
+    width: 100%;
+    height: $image-height;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__content {
+    padding: $spacing-large;
+  }
+
+  &__title {
+    margin: 0 0 $spacing-small;
+    color: $primary-color;
+    font-size: 26px;
+  }
+
+  &__type {
+    margin: 0 0 $spacing-medium;
+    color: $muted-color;
+    font-size: 14px;
+  }
+
+  &__description {
+    margin: 0 0 $spacing-medium;
+    line-height: 1.6;
+  }
+
+  &__rarity {
+    margin: 0 0 $spacing-large;
+    color: $secondary-color;
+    font-weight: bold;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-medium;
+  }
+
+  &__price {
+    font-size: 18px;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+  &__button {
+    border: none;
+    padding: $spacing-small $spacing-medium;
+    background: $button-color;
+    color: $text-color;
+    border-radius: $button-radius;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+
+    &:hover {
+      background: $hover-color;
+      transform: translateY(-2px);
+    }
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+  }
+
+  &--legendary {
+    border-color: $secondary-color;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $background-color;
+  font-family: Arial, sans-serif;
+}

@@ -1,0 +1,82 @@
+.item-card {
+  width: 360px;
+  background: #1f2937;
+  color: #f9fafb;
+  border: 2px solid #8b5cf6;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  padding-bottom: 14px;
+  transition: 0.3s ease;
+}
+.item-card__image {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.item-card__content {
+  padding: 24px;
+}
+.item-card__title {
+  margin: 0 0 10px;
+  color: #8b5cf6;
+  font-size: 26px;
+}
+.item-card__type {
+  margin: 0 0 16px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+.item-card__description {
+  margin: 0 0 16px;
+  line-height: 1.6;
+}
+.item-card__rarity {
+  margin: 0 0 24px;
+  color: #c084fc;
+  font-weight: bold;
+}
+.item-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.item-card__price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #8b5cf6;
+}
+.item-card__button {
+  border: none;
+  padding: 10px 16px;
+  background: #8b5cf6;
+  color: #f9fafb;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.item-card__button:hover {
+  background: #c084fc;
+  transform: translateY(-2px);
+}
+.item-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+.item-card--legendary {
+  border-color: #c084fc;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111827;
+  font-family: Arial, sans-serif;
+}/*# sourceMappingURL=style.css.map */
